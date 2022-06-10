@@ -10,18 +10,12 @@ router.get("/:maBenhNhan", async function (req, res){
     if(list === null){
         return res.status(204).end();
     }
-    console.log(list);
+
     res.json(list);
 })
 
 
 function formatDate(date) {
-    // date = new Date(date);
-    // const day = date.getDate();
-    // const month = date.getMonth();
-    // const year = date.getFullYear();
-    //
-    // return `${year}-${month + 1}-${day%30 - 1}`;
 
     const pos = date.indexOf('T');
     date = date.slice(0, pos)
