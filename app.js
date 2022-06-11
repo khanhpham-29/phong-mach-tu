@@ -31,7 +31,7 @@ app.use('/api/thuoc', thuocRouter);
 
 app.get('/', function (req, res){
     res.json({
-        msg: "hello work"
+        msg: "hello world!!!"
     });
 })
 
