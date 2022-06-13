@@ -1,0 +1,5 @@
+demo-job-1:
+  tag:
+    - ci
+  script:
+    - echo hello khanh
