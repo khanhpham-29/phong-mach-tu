@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng mạch tư</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <!-- out css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="home-btn">
+            <img src="../../img/logo.png" class="logo">
+            <span class="company-name">
+                Phòng mạch tư
+            </span>
+        </div>
+        <div class="nav">
+            <a href="../../index.html" class="btn">Trang chủ</a>
+            <a href="../lap-phieu-kham/lap-phieu-kham.html" class="btn">Lập phiếu khám bệnh</a>
+            <a href="../benh-nhan/benh-nhan.html" class="btn">Bệnh nhân</a>
+            <a href="../lap-hoa-don/lap-hoa-don.html" class="btn">Lập hóa đơn</a>
+            <a href="../bao-cao-thang/bao-cao-thang.html" class="btn">Báo cáo tháng</a>
+            <a href="../quy-dinh/quy-dinh.html" class="btn">Quy định</a>
+        </div>
+
+
+    </header>
+    <div class="container">
+        <div class="info-label">
+            Thông tin bệnh nhân
+        </div>
+        <div class="directional">
+            <div class="parent-path">
+                Home
+            </div>
+
+            <div class="current-path">
+                Lap-hoa-don
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-block">
+            <div class="row">
+                <label class="label-type" for="ten">Tên:</label>
+                <input class="input-label" type="text" id="ten-input">
+                <label class="label-type" for="sdt">Số Điện Thoại</label>
+                <input class="input-label" type="text" id="sdt-input">
+            </div>
+            <div class="row">
+                <button type="button" class="btn-content" id="btn-tim-kiem">Tìm kiếm</button>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="label-info">
+                *Thông tin chi tiết bệnh nhân
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <label class="label-type" for="ten">Tên:</label>
+                    <label class="input-label" type="text" id="ten"></label>
+                </div>
+
+                <div class="cell">
+                    <label class="label-type" for="sdt">Số Điện Thoại</label>
+                    <label class="input-label" type="text" id="sdt"></label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    <label class="label-type" for="nam-sinh">Năm Sinh:</label>
+                    <label class="input-label" type="text" id="nam-sinh"></label>
+                </div>
+                <div class="cell">
+                    <label class="label-type" for="gioi-tinh">Giới Tính:</label>
+                    <label class="input-label" type="text" id="gioi-tinh"></label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    <label class="label-type" for="loai-benh">Chuẩn đoán:</label>
+                    <label class="input-label" type="text" id="loai-benh"></label>
+                </div>
+                <div class="cell">
+                    <label class="label-type" for="trieu-chung">Triệu Chứng:</label>
+                    <label class="input-label" type="text" id="trieu-chung"></label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-block">
+            <div class="label-info">
+                *Thông tin hóa đơn
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <label class="label-type" for="ma-benh-nhan">Mã Bệnh Nhân:</label>
+                    <label class="input-label" type="text" id="ma-benh-nhan"></label>
+                </div>
+
+                <div class="cell">
+                    <label class="label-type" for="ma-toa-thuoc">Mã Toa Thuốc:</label>
+                    <label class="input-label" type="text" id="ma-toa-thuoc"></label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    <label class="label-type" for="tien-thuoc">Tiền thuốc:</label>
+                    <label class="input-label" type="text" id="tien-thuoc"></label>
+                </div>
+                <div class="cell">
+                    <label class="label-type" for="tien-kham">Tiền Khám:</label>
+                    <label class="input-label" type="text" id="tien-kham"></label>
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="button" class="btn-content" id="btn-in-hoa-don">In hóa đơn</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script language="javascript"  type="module" src="./javascript/index.js"></script>
+    <script language="javascript"  type="module" src="../../javascript/backendaddress.js"></script>
+    
+       
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 170%;
+}
+
+header {
+    max-width: 1140px;
+    height: 96px;
+    margin: auto;
+    display: flex;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #777777;
+}
+
+.home-btn:hover{
+    color: #5e5e5e;
+}
+
+.company-name {
+    font-size: 30px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.breadcrumbs {
+    width: 100%;
+    height: 96px;
+    padding: 0 72px;
+    background-color: #34495e;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.info {
+    font-size: 24px;
+}
+.directional {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.parent-path::after {
+    content: "/";
+    margin: 0 8px;
+    color: #ccc;
+}
+
+.parent-path {
+    color: #48cfad;
+}
+
+.content {
+    margin: 10px 72px;
+    padding: 0 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px #34495e solid;
+    border-radius: 2px;
+}
+
+.day {
+    margin-left: auto;
+    padding: 12px 18px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 376px;
+}
+.table {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 50px ;
+    border-collapse: collapse;
+}
+
+tr.tb-row {
+    border-bottom: 2px #ccc solid;
+    line-height: 50px;
+    text-align: left;
+}
+
+.tb-row td {
+    padding: 10px 20px;
+}
+
+th {
+    font-weight: 300;
+}

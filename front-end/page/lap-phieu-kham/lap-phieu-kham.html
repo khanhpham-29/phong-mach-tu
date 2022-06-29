@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập phiếu khám</title>
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- out css -->
+    <link rel="stylesheet" href="./style.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <a class="home-btn" href="../../index.html">
+            <img src="../../img/logo.png" class="logo">
+            <span class="company-name">
+                Phòng mạch tư
+            </span>
+        </a>
+    </header>
+
+    <div class="content">
+        <form class="form-get-info">
+            <label class="label-type" for="sdt">Số điện thoại:</label>
+            <input class="input-label" type="text" id="sdt" required>
+
+            <label class="label-type" for="ten">Họ và tên:</label>
+            <input class="input-label" type="text" id="ten" required>
+
+            <button class="btn" type="submit" id="btn-check">Kiểm Tra</button>
+        </form>
+
+        <form class="form-get-info">
+            <label id="label-status">*Bệnh nhân chưa tồn tại</label>
+
+            <label class="label-type" for="gioi-tinh">Giới Tính:</label>
+            <select name="gioi-tinh" id="gioi-tinh" class="input-label">
+                <option value="nam">Nam</option>
+                <option value="nu">Nữ</option>
+                <option value="khac">Khác</option>
+            </select>
+
+            <label class="label-type" for="dia-chi">Địa chỉ:</label>
+            <input class="input-label" type="text" id="dia-chi" required>
+
+            <label class="label-type" for="nam-sinh">Năm sinh:</label>
+            <input class="input-label" type="date" id="nam-sinh" required>
+
+            <label class="label-type" for="ngay-kham">Ngày khám:</label>
+            <input class="input-label" type="date" id="ngay-kham" required>
+
+            <label class="label-type" for="trieu-chung">Triệu chứng:</label>
+            <input class="input-label" type="text" id="trieu-chung" required>
+
+            <label class="label-type" for="chuan-doan">Chuẩn đoán:</label>
+            <input class="input-label" type="text" id="chuan-doan" required>
+            <button id="btn-xuat-phieu-kham" class="btn" type="submit">Xuất phiếu khám</button>
+        </form>
+    </div>
+</body>
+
+<script language="javascript"  type="module" src="./javascript/index.js"></script>
+<script language="javascript"  type="module" src="../../javascript/backendaddress.js"></script>
+
+
+</html>

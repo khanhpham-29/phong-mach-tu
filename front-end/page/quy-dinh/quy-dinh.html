@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng mạch tư</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <!-- out css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+    <div class="holder" id = "holder-capnhat">
+        <form class="form form-cap-nhat flex col-direc">
+            <div class="center-horizontal text-black text-big mg-b-16px">
+                Cập nhật thuốc
+            </div>
+            <div class="form-cap-nhat-cell center-horizontal flex-grow-full flex">
+                <label class="text-black label-cap-nhat" for="input-ma-thuoc">Mã thuốc:</label>
+                <input type="text" id="input-ma-thuoc" class="input-form" required readonly>
+            </div>
+            <div class="form-cap-nhat-cell center-horizontal flex-grow-full flex">
+                <label class="text-black label-cap-nhat" for="input-ten-thuoc">Tên thuốc:</label>
+                <input type="text" id="input-ten-thuoc" class="input-form" required>
+            </div>
+            <div class="form-cap-nhat-cell center-horizontal flex-grow-full flex">
+                <label class="text-black label-cap-nhat" for="input-don-vi">Đơn vị:</label>
+                <input type="text" id="input-don-vi" class="input-form" required>
+            </div>
+            <div class="form-cap-nhat-cell center-horizontal flex-grow-full flex">
+                <label class="text-black label-cap-nhat" for="input-gia">Giá:</label>
+                <input type="text" id="input-gia" class="input-form" required>
+            </div>
+
+            <div class="flex row-direc align-end">
+                <div class="center-horizontal align-end">
+                    <button type="submit" class="btn btn-form" id="btn-cap-nhat-thuoc">Cập nhật</button>
+                </div>
+
+                <div class="center-horizontal align-end">
+                    <button type="submit" class="btn btn-form" id="btn-xoa-thuoc">Xóa</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+    <div class="holder" id = "holder-them">
+        <form class="form form-cap-nhat flex col-direc">
+            <div class="center-horizontal text-black text-big mg-b-16px">
+                Thêm thuốc
+            </div>
+            
+            <div class="form-cap-nhat-cell center-horizontal flex-grow-full flex">
+                <label class="text-black label-cap-nhat" for="input-add-ten-thuoc">Tên thuốc:</label>
+                <input type="text" id="input-add-ten-thuoc" class="input-form" required>
+            </div>
+            <div class="form-cap-nhat-cell center-horizontal flex-grow-full flex">
+                <label class="text-black label-cap-nhat" for="input-add-don-vi">Đơn vị:</label>
+                <input type="text" id="input-add-don-vi" class="input-form" required>
+            </div>
+            <div class="form-cap-nhat-cell center-horizontal flex-grow-full flex">
+                <label class="text-black label-cap-nhat" for="input-add-gia">Giá:</label>
+                <input type="text" id="input-add-gia" class="input-form" required>
+            </div>
+
+            <div class="center-horizontal align-end">
+                <button type="submit" class="btn btn-form" id="btn-them-thuoc">Thêm thuốc</button>
+            </div>
+        </form>
+    </div>
+
+
+    <header>
+        <div class="home-btn">
+            <img src="../../img/logo.png" class="logo">
+            <span class="company-name">
+                Phòng mạch tư
+            </span>
+        </div>
+        <div class="nav">
+            <a href="../../index.html" class="btn">Trang chủ</a>
+            <a href="../lap-phieu-kham/lap-phieu-kham.html" class="btn">Lập phiếu khám bệnh</a>
+            <a href="../benh-nhan/benh-nhan.html" class="btn">Bệnh nhân</a>
+            <a href="../lap-hoa-don/lap-hoa-don.html" class="btn">Lập hóa đơn</a>
+            <a href="../bao-cao-thang/bao-cao-thang.html" class="btn">Báo cáo tháng</a>
+            <a href="./quy-dinh.html" class="btn">Quy định</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container" id="main-page">
+            <div class="center-horizontal text-white center-horizontal text-big">
+                Cập nhật thuốc tiền khám
+            </div>
+            <form class="flex form">
+                <div class="center-horizontal flex-grow-full flex">
+                    <label class="label-tien-kham" for="input-tien-kham">Tiền Khám:</label>
+                    <input type="text" id="input-tien-kham" class="input-form" required>
+                </div>
+
+                <div class="center-horizontal align-end">
+                    <button type="submit" class="btn btn-form" id="btn-cap-nhat-tien-kham">Cập nhật</button>
+                </div>
+            </form>
+
+            <div class="center-horizontal text-white center-horizontal text-big">
+                Danh sách thuốc
+            </div>
+
+            <form class="flex form">
+                <div class="flex-grow-full flex pad-16px">
+                    <label class="label-form" for="input-search">Tên thuốc:</label>
+                    <input type="text" id="input-search" class="input-form" required>
+                </div>
+                <div class="center-horizontal align-end">
+                    <button type="submit" class="btn btn-form" id="btn-tim-kiem-thuoc">Tìm kiếm</button>
+                </div>
+            </form>
+
+            <div class="flex col-direc form">
+                <div class="center-horizontal text-big">
+                    Danh sách
+                    <div class="center-horizontal align-end">
+                        <button class="btn btn-form" id="btn-them">Thêm</button>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead class="table-head" id="table-header">
+                        <tr class="tb-row">
+                            <th>Mã thuốc</th>
+                            <th>Tên thuốc</th>
+                            <th>Đơn vị</th>
+                            <th>Giá</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content">
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<script language="javascript"  type="module" src="./javascript/index.js"></script>
+<script language="javascript"  type="module" src="../../javascript/backendaddress.js"></script>
+
+
+<script>
+
+
+</script>
+
+
+</html>

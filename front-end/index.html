@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng mạch tư</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <!-- out css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- css chung -->
+    <link rel="stylesheet" href="./css/stylesAll.css">
+
+    
+</head>
+
+<body>
+    <header>
+        <div class="home-btn">
+            <img src="./img/logo.png" class="logo">
+            <span class="company-name">
+                Phòng mạch tư
+            </span>
+        </div>
+        <div class="nav">
+            <a href="index.html" class="btn">Trang chủ</a>
+            <a href="./page/lap-phieu-kham/lap-phieu-kham.html" class="btn">Lập phiếu khám bệnh</a>
+            <a href="./page/benh-nhan/benh-nhan.html" class="btn">Bệnh nhân</a>
+            <a href="./page/lap-hoa-don/lap-hoa-don.html" class="btn">Lập hóa đơn</a>
+            <a href="./page/bao-cao-thang/bao-cao-thang.html" class="btn">Báo cáo tháng</a>
+            <a href="./page/quy-dinh/quy-dinh.html" class="btn">Quy định</a>
+        </div>
+
+        
+    </header>
+    <div class="breadcrumbs">
+        <div class="info">
+            Danh sách khám
+        </div>
+        <div class="directional">
+            <div class="parent-path">
+                Home
+            </div>
+            
+            <div class="current-path">
+                Danh sách khám
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="day">
+            Ngày khám:
+            <input type="date" id="ngay-kham">
+            <button id='btn-xem' class="btn btn-form">
+                Xem
+            </button>
+        </div>
+        <table class="table">
+            <thead class="table-head">
+                <tr class="tb-row">
+                    <th>Mã</th>
+                    <th>Họ và tên</th>
+                    <th>Năm sinh</th>
+                    <th>Giới tính</th>
+                    <th>Địa chỉ</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody id="table-container">
+
+            </tbody>
+        </table>
+    </div>
+
+    
+    
+</body>
+<script language="javascript"  type="module" src="./javascript/index.js"></script>
+<script language="javascript"  type="module" src="./javascript/backendaddress.js"></script>
+
+
+
+</html>
